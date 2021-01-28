@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import {Switch, Route} from "react-router-dom";
 import Cover from "../../pages/Cover/Cover";
 import Navbar from "../../core/Navbar/Navbar";
+import About from "../../pages/About/About";
+import Slider from "../../pages/Slider/Slider";
+import Info from "../../pages/Info/Info";
+import Footer from "../../core/Footer/Footer";
 
 
 const Routes = () => {
@@ -23,6 +27,10 @@ const Routes = () => {
             <Route path="/">
                 <Navbar isScrolling={scrollHeight}/>
                 <Cover/>
+                <About/>
+                <Slider/>
+                <Info/>
+                <Footer/>
             </Route>
         </Switch>
     )
