@@ -1,0 +1,10 @@
+0. Archivos a borrar sugeridos que yo no borro:
+        -setupTests.js
+        -reportWebVitals.js
+        -logo.svg
+        -index.scss
+        -En index.js > todo lo relacionado con lo anteriormente borrado
+
+    SNIPPETS: 
+        rafce    crear componente funcional de flecha con export
+
