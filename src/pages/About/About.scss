@@ -1,6 +1,8 @@
+@import '../../index.scss';
+
 .about-container {
     display: flex;
-    background-color: white;
+    background-color: $text-normal;
     color: black;
     height: 70vh;
     padding: 100px 0 100px 0;

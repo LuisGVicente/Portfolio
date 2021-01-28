@@ -1,8 +1,10 @@
+@import '../../index.scss';
+
 .footer {
     width: 100%;
     height: 100vh;
     background-color: black;
-    color: white;
+    color: $text-normal;
     padding-top: 180px;
     position: fixed;
     z-index: -2;
@@ -49,7 +51,7 @@
   .linkedin,
   .twitter,
   .github {
-    color: white;
+    color: $text-normal;
     font-size: 35px;
     margin: 0 auto;
     padding-bottom: 10px;
@@ -59,14 +61,14 @@
   .linkedin:hover,
   .twitter:hover,
   .github:hover {
-    border-color: white;
+    border-color: $text-normal;
     transition: all 0.3s ease-out;
   }
   
   .design-by {
     font-size: 18px;
     padding-left: 50px;
-    color: white;
+    color: $text-normal;
   }
   
   @media only screen and (max-width: 960px) {

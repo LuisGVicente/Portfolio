@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .navbar {
     position: fixed;
     top: 0;
@@ -8,6 +10,17 @@
     font-size: 20px;
     z-index: 1;  
     transition: all .8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__max-width{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1300px;
+        padding-right: 50px;
+
+    }
 }
 
 .scrolling {
@@ -18,6 +31,23 @@
 .navbar-logo {
     height: 80px;
     line-height: 80px;
-    color: white;
+    color: $text-normal;
     cursor: pointer;
+}
+
+.menu {
+    &__list{
+        list-style: none;
+        display: inline-block;
+    }
+    &__link{
+        color: $text-normal;
+        margin-left: 25px;
+
+
+    }
+}
+.menu__link:hover {
+    color: $text-imp;
+    transition: all 0.3s ease-out;
 }

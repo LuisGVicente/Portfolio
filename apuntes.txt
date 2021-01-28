@@ -1,3 +1,6 @@
+https://www.youtube.com/watch?v=tcskp-ncN0I&list=PLSnb7K3NpHdmxu55g1BZEwo6uu6bOZsJz&index=2&ab_channel=CodingNepal
+15.07
+
 0. Archivos a borrar sugeridos que yo no borro:
         -setupTests.js
         -reportWebVitals.js
