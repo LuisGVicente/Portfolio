@@ -19,7 +19,6 @@
         justify-content: space-between;
         max-width: 1300px;
         padding-right: 50px;
-
     }
 }
 
@@ -35,17 +34,14 @@
     cursor: pointer;
 }
 
-.menu {
-    &__list{
-        list-style: none;
-        display: inline-block;
-    }
-    &__link{
-        color: $text-normal;
-        margin-left: 25px;
+.navbar-logo span{
+    color: $text-imp;
+}
 
+.menu__link {
+    color: $text-normal;
+    margin-left: 25px;
 
-    }
 }
 .menu__link:hover {
     color: $text-imp;

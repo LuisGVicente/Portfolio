@@ -1,4 +1,5 @@
 import React from 'react';
+import Burguer from './Burguer';
 import './Navbar.scss';
 
 const Navbar = ({isScrolling}) => {
@@ -10,14 +11,11 @@ const Navbar = ({isScrolling}) => {
 
     return (
         <div className={`navbar ${isScrolling > 20 ? "scrolling" : null}`}>
-            <div className="navbar-logo" onClick={toTheTop}>Luis G. Vicente</div>
+            <div className="navbar-logo" onClick={toTheTop}><span>Luis </span>G. Vicente</div>
             <div className="navbar__max-width">
-                <ul className="menu">
-                    <li className="menu__list"><a href="About" className="menu__link">Sobre mí</a></li>
-                    <li className="menu__list"><a href="Timeline" className="menu__link">Cronología</a></li>
-                    <li className="menu__list"><a href="Contact" className="menu__link" >Contacto</a></li>
-                </ul>
+            <Burguer/>
             </div>
+            
         </div>
     )
 }
