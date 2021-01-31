@@ -1,0 +1,121 @@
+@import '../../index.scss';
+
+.navbar__timeline {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  padding-left: 50px;
+  font-size: 20px;
+  z-index: 1;  
+  transition: all .8s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.time-container {
+    background: url('../../assets/media/pexels-road1.mp4');
+    padding-top: 5%;
+}
+
+.video {
+    background: #7DD174;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.endpoint {
+    font-size: 6em;
+    text-align: center;
+    -webkit-text-stroke: 1px $text-imp;
+    color: transparent;
+}
+.title {
+    font-size: 12em;
+    text-align: center;
+    -webkit-text-stroke: 1px $text-imp;
+    color: transparent;
+  }
+  
+  h3 {
+    padding-top: 0.25em;
+  }
+
+  .first {
+      background-color: black;
+  }
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+      0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    padding: 2em 3em !important;
+    //Modifica el color de fondo de la viñeta
+    background: rgba(194, 173, 159, 0.6);
+
+  }
+
+  .vertical-timeline-element-content-arrow{
+      //Modifica el triangulo que une la viñeta a la línea temporal
+     // border-right: 7px solid red;
+  }
+  
+  .date {
+    color: rgb(201, 251, 255);
+  }
+  
+  #description {
+    margin: 1.5em 0 2em 0;
+  }
+  
+  .button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .workButton {
+    background-color: #06d6a0;
+  }
+  
+  .workButton:hover {
+    background-color: #0ac593;
+  }
+  
+  .schoolButton {
+    background-color: #f9c74f;
+  }
+  
+  .schoolButton:hover {
+    background-color: #f3bc3c;
+  }
+  
+  @media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+      display: block !important;
+      float: none !important;
+      color: rgb(44, 44, 44);
+      margin-top: 1.5em;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .title {
+        font-size: 6em;
+        text-align: center;
+        -webkit-text-stroke: 1px $text-imp;
+        color: transparent;
+      }
+      .endpoint {
+        font-size: 6em;
+        text-align: center;
+        -webkit-text-stroke: 0px $text-imp;
+        color: transparent;
+    }
+  }
+

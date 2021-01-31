@@ -6,6 +6,7 @@ import About from "../../pages/About/About";
 import Slider from "../../pages/Slider/Slider";
 import Info from "../../pages/Info/Info";
 import Footer from "../../core/Footer/Footer";
+import Timeline from '../../pages/Timeline/Timeline';
 
 
 const Routes = () => {
@@ -24,6 +25,11 @@ const Routes = () => {
 
     return (
         <Switch>
+
+            <Route path="/timeline">
+              <Timeline/>
+            </Route>
+
             <Route path="/">
                 <Navbar isScrolling={scrollHeight}/>
                 <Cover/>
