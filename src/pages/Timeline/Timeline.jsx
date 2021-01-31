@@ -9,7 +9,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import './Timeline.scss';
 import coverVideo from  '../../assets/media/pexels-desertroad.mp4';
-import Navbar from '../../core/Navbar/Navbar';
 
 const Timeline = () => {
 
@@ -23,7 +22,6 @@ const Timeline = () => {
 
     return (
         <>
-        <Navbar page='timeline'/>
         <video className="video" src={coverVideo} autoPlay loop muted />
         <div className="time-container">
             

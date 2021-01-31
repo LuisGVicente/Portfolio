@@ -27,6 +27,7 @@ const Routes = () => {
         <Switch>
 
             <Route path="/timeline">
+              <Navbar page='timeline' isScrolling={scrollHeight}/>
               <Timeline/>
             </Route>
 

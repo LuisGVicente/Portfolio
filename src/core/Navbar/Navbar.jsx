@@ -8,10 +8,10 @@ const Navbar = ({isScrolling, page}) => {
     const toTheTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       };
-      console.log(page);
 
     return (
-        <div className="navbar__timeline">
+        // <div className={`navbar  ${page === "timeline" ? "navbar navbar__timeline" : isScrolling > 20 ? "scrolling" : null}`}>
+        <div className={`navbar  ${isScrolling > 20 ? "scrolling" : page === "timeline" ? "navbar navbar__timeline" : null}`}>
             <div className="navbar-logo" onClick={toTheTop}><span>Luis </span>G. Vicente</div>
             <div className="navbar__max-width">
             <Burguer/>

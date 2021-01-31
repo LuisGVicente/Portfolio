@@ -1,11 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 const RightNav = ({open}) => {
-
-    const {page} = useParams();
-    console.log(page);
 
     const Ul = styled.ul`
         list-styled: none;
@@ -20,7 +16,7 @@ const RightNav = ({open}) => {
 
         @media (max-width: 600px) {
             flex-flow: column nowrap;
-            background-color: black;
+            background: linear-gradient(to bottom, black 20%, rgb(38, 38, 38) 30%, transparent 50%);;
             position: fixed;
             transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(100%)'};
             top: 0;
@@ -34,7 +30,7 @@ const RightNav = ({open}) => {
 
     return (
     <Ul open={open}>
-        <li><a href="About" className={page === '/Timeline' ? "menu__link--timeline" : "menu__link"}>Sobre mí</a></li>
+        <li><a href="About" className="menu__link">Sobre mí</a></li>
         <li><a href="Timeline" className="menu__link">Experiencia</a></li>
         <li><a href="Contact" className="menu__link" >Contacto</a></li>
     </Ul>

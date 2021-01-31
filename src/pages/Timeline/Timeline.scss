@@ -1,19 +1,5 @@
 @import '../../index.scss';
 
-.navbar__timeline {
-  position: fixed;
-  top: 0;
-  background-color: black;
-  width: 100%;
-  height: 80px;
-  padding-left: 50px;
-  font-size: 20px;
-  z-index: 1;  
-  transition: all .8s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .time-container {
     background: url('../../assets/media/pexels-road1.mp4');
     padding-top: 5%;
