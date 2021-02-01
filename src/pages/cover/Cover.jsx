@@ -11,20 +11,22 @@ const Cover = () => {
             <video className="video" src={coverVideo} autoPlay loop muted/>
             <div className="cover-content">
                 <p className="text-welcome">¡Bienvenidos! Mi nombre es</p>
-                <h1 className="text-main">Luis García Vicente</h1>
+                <h1 className="text-main">Luis <span className="text-main__border">García Vicente</span></h1>
                 <p className="text-secondary">
                 <Typical
                         className="text-job"
-                        loop={Infinity}
+                        loop={1}
                         wrapper="b"
                         steps={[
                             'Desarrollador Web.',
-                            1000,
+                            600,
                             'JavaScript, CSS, MongoDB, Agile...',
-                            1000,
+                            600,
                             'Gestor de Equipos.',
-                            1000,
+                            600,
                             'En español, inglés y francés.',
+                            600,
+                            'Desarrollador Web.',
                             1000
                         ]}
                     /></p>

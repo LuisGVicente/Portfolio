@@ -28,6 +28,12 @@
     color: $text-normal;
     font-size: 85px;
     font-weight: 600;
+    &__border {
+        color: transparent;
+        -webkit-text-stroke: 1px $text-imp;
+        font-size: 85px;
+        font-weight: 600;
+    }
 }
 
 .text-secondary {

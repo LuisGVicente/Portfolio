@@ -6,7 +6,7 @@
 }
 
 .video {
-    background: #7DD174;
+    background: black;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -32,10 +32,14 @@
   h3 {
     padding-top: 0.25em;
   }
+.flag {
+    height: 1.5em;
+}
 
-  .first {
-      background-color: black;
+  .vertical-timeline-element-subtitle{
+    padding-top: .5em;
   }
+
 .vertical-timeline-element-content {
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
       0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
@@ -47,15 +51,22 @@
 
   .vertical-timeline-element-content-arrow{
       //Modifica el triangulo que une la viñeta a la línea temporal
-     // border-right: 7px solid red;
+     border-right: 1rem solid rgba(194, 173, 159, 0.6);
   }
   
   .date {
     color: rgb(201, 251, 255);
   }
+
   
   #description {
-    margin: 1.5em 0 2em 0;
+    margin: 1em 0 1em 0;
+  }
+  .rolelist {
+    margin-bottom: 2em;
+  }
+  .roles {
+    margin: 1.2em;
   }
   
   .button {
@@ -66,7 +77,8 @@
   }
   
   .workButton {
-    background-color: #06d6a0;
+    margin-top: 5em;
+    background-color: #277c6e;
   }
   
   .workButton:hover {
@@ -74,7 +86,8 @@
   }
   
   .schoolButton {
-    background-color: #f9c74f;
+    margin-top: 5em;
+    background-color: #c59119;
   }
   
   .schoolButton:hover {

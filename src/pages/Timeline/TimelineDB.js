@@ -1,68 +1,145 @@
 let timelineElements = [
     {
       id: 1,
-      title: "Frontend Developer",
-      location: "Dragontail, Ascana",
+      title: "FullStack Developer",
+      institution: "Upgrade Hub",
+      location: "Madrid, España",
       description:
-        "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-      buttonText: "View Frontend Projects",
-      date: "August 2016 - present",
-      icon: "work",
+        "Bootcamp de programación. Tecnologías usadas: ",
+      role: [" Vanilla JavaScript, React, Docker, MySQL, MongoDB, CSS, HTML, PHP Symfony, NodeJS, Angular.", "Introducción a metodologías ágiles como Agile o Scrum"],
+      buttonText: "Ver la academia",
+      href: "https://pro.upgrade-hub.com/",
+      date: "Octubre 2020 - Enero 2021",
+      icon: "school",
+      src: ""
     },
     {
       id: 2,
-      title: "Backend Developer",
-      location: "Skystead, Craonia",
+      title: "Manager del departamento de Tesorería Y Mayorista",
+      institution: "Global Exchange Australia",
+      location: "Sydney, AUSTRALIA",
       description:
-        "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-      buttonText: "View Backend Projects",
+        "Promoción a manager del departamento de Tesorería de la filial Australiana del Grupo Global Exchange. Principales funciones: ",
+      role: ["Diseño e implementación del departamento en el centro de trabajo.", "Formador del equipo de tesoreros y asesores.", "Gestión del equipo de tesoreros (3) y asesores (50).","Responsable de compras y ventas de la filial."],
+      buttonText: "Ver la empresa",
+      href: "https://www.global-exchange.com.au/",
       date: "June 2013 - August 2016",
       icon: "work",
+      src: "https://img.icons8.com/doodle/48/000000/great-britain.png"
     },
     {
       id: 3,
-      title: "Quality Assurance Engineer",
-      location: "South Warren, Geshington",
+      title: "Responsable de implementación y formación de equipos",
+      institution: "Global Exchange Hong Kong",
+      location: "HONG KONG",
       description:
-        "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-      buttonText: "Company Website",
-      date: "September 2011 - June 2013",
+        "Miembro del equipo responsable de la apertura de la primera filial en Asia del grupo.",
+      role: ["diseñar el departamento de Tesorería y su implementación en la apertura de la sede en Hong Kong.","Formación del equipo de tesoreros (5) y de asesores (75)."],
+      buttonText: "Ver la empresa",
+      href: "https://www.globalexchange.hk/en/home",
+      date: "Enero 2018 - Marzo 2018",
       icon: "work",
+      src: "https://img.icons8.com/color/48/000000/hongkong-flag.png"
     },
     {
       id: 4,
-      title: "Oak Ridge College",
-      location: "South Warren, Geshington",
+      title: "Gestor del Departamento de Tesorería",
+      institution: "Global Exchange España",
+      location: "Madrid, ESPAÑA",
       description:
-        "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "Course Certificate",
-      date: "September 2011",
-      icon: "school",
+        "Promoción como gestor de tesorería hasta 2014 y manager de departamento desde 2015. Principales funciones: ",
+      role: ["Gestión del equipo de tesorería (2) y del equipo de asesores(25).", "Determinar Precios y rentabilidad."],
+      buttonText: "Ver la empresa",
+      href: "https://www.linkedin.com/company/global-exchange-group/?originalSubdomain=es",
+      date: "September 2013 - Agosto 2016",
+      icon: "work",
+      src: "https://img.icons8.com/doodle/48/000000/spain-2.png"
     },
     {
       id: 5,
-      title: "Hawking College",
-      location: "Skystead, Craonia",
+      title: "Asesor comercial",
+      institution: "Global Exchange España",
+      location: "Aeropuerto Adolfo Suarez-Barajas, Madrid, ESPAÑA",
       description:
-        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "College Projects",
-      date: "2007 - 2011",
-      icon: "school",
+        "Trato directo con el cliente y asesoría de cambio de divisas.",
+      role: "",
+      buttonText: "Ver la empresa",
+      href: "https://www.linkedin.com/company/global-exchange-group/?originalSubdomain=es",
+      date: "September 2012 - Agosto 2013",
+      icon: "work",
+      src: ""
     },
     {
       id: 6,
-      title: "Marble Hills Grammar School",
-      location: "Dragontail, Ascana",
+      title: "Editor Newsletter",
+      institution: "Asociación Española de Blogs de Moda",
+      location: "Madrid, ESPAÑA",
       description:
-        "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2003 - 2007",
-      icon: "school",
+        "Cobertura de eventos de la asociación y edición de la newsletter mensual para sus socios.",
+      role: "",
+      buttonText: "",
+      href: "",
+      date: "2012",
+      icon: "work",
+      src: ""
     },
     {
-        id: 7,
+      id: 7,
+      title: "Master en Periodismo Multimedia Profesional",
+      institution: "Universidad Complutense",
+      location: "Madrid, ESPAÑA",
+      description:
+        "Aplicación de Nuevas Tecnologías a las Ciencias de la Información.",
+      role: "",
+      buttonText: "",
+      href: "",
+      date: "Septiembre 2010 - Mayo 2011",
+      icon: "school",
+      src: ""
+    },
+    {
+      id: 8,
+      title: "Beca Faro",
+      institution: "Universidade do Porto",
+      location: "Oporto, PORTUGAL",
+      description:
+        "Estancia de trabajo en la Oficina de Relaciones Internacionales de la UP.",
+      role: "",
+      buttonText: "",
+      href: "",
+      date: "Enero 2009 - Agosto 2009",
+      icon: "school",
+      src: "https://img.icons8.com/doodle/48/000000/portugal.png"
+    },
+    {
+      id: 9,
+      title: "Beca Erasmus",
+      institution: "Université d`Avignon",
+      location: "Avignon, FRANCIA",
+      description:
+        "Curso completo en Francia para aprender el idioma.",
+      role: "",
+      buttonText: "",
+      href: "",
+      date: "Septiembre 2007 - Mayo 2008",
+      icon: "school",
+      src: "https://img.icons8.com/doodle/48/000000/france.png"
+    },
+    {
+      id: 10,
+      title: "Licenciatura en Sociología",
+      institution: "Universidad de Alicante",
+      location: "Alicante, ESPAÑA",
+      description:
+        "Ciencias Sociales, Historia, Economía, Psicología, Teoría de grupos, Filosofía, Estadística, Antropología.",
+      role: "",
+      buttonText: "",
+      href: "",
+      date: "2004-2010",
+      icon: "school",
+      src: ""
+    },
 
-        icon: "school",
-      },
   ];
   
   export default timelineElements;

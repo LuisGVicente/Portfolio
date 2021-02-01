@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { ReactComponent as WorkIcon }  from '../../assets/img/work.svg';
 import { ReactComponent as SchoolIcon } from '../../assets/img/school.svg';
+import { ReactComponent as StarIcon } from '../../assets/img/star.svg';
 import timelineElements from "./TimelineDB";
 import {
   VerticalTimeline,
@@ -12,8 +13,8 @@ import coverVideo from  '../../assets/media/pexels-desertroad.mp4';
 
 const Timeline = () => {
 
-    let workIconStyles = { background: "#06D6A0" };
-    let schoolIconStyles = { background: "#f9c74f" };
+    let workIconStyles = { background: "#277c6e" };
+    let schoolIconStyles = { background: "#c59119" };
     
 
     useEffect(() => {
@@ -35,7 +36,7 @@ const Timeline = () => {
                 element.buttonText !== "";
                 return (
                 <VerticalTimelineElement
-                    key={element.key}
+                    key={element.id}
                     date={element.date}
                     dateClassName="date"
                     iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
@@ -43,18 +44,29 @@ const Timeline = () => {
                     visible={false}
                 >
                     <h3 className="vertical-timeline-element-title">
-                    {element.title}
+                    <img className="flag" src={element.src}/>&nbsp;{element.title}
                     </h3>
+                    <h5 className="vertical-timeline-element-subtitle">
+                    {element.institution}
+                    </h5>
                     <h5 className="vertical-timeline-element-subtitle">
                     {element.location}
                     </h5>
                     <p id="description">{element.description}</p>
+                    <ol className="rolelist">
+                        {element.role && element.role.map((rol) => {
+                            return <li className="roles">{rol}</li>
+                        })}
+                    </ol>
+                    
                     {showButton && (
                     <a
                         className={`button ${
                         isWorkIcon ? "workButton" : "schoolButton"
                         }`}
-                        href="/"
+                        href={element.href}
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         {element.buttonText}
                     </a>
@@ -62,10 +74,6 @@ const Timeline = () => {
                 </VerticalTimelineElement>
                 );
             })}
-              <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                icon={<WorkIcon />}
-            /><div class="first"></div>
             </VerticalTimeline>
             <h1 className="title">El camino</h1>
         </div>
