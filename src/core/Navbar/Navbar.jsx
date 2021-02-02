@@ -12,7 +12,9 @@ const Navbar = ({isScrolling, page}) => {
     return (
         // <div className={`navbar  ${page === "timeline" ? "navbar navbar__timeline" : isScrolling > 20 ? "scrolling" : null}`}>
         <div className={`navbar  ${isScrolling > 20 ? "scrolling" : page === "timeline" ? "navbar navbar__timeline" : null}`}>
-            <div className="navbar-logo" ><span>Luis</span><a href="/" className="menu__link__home">G. Vicente</a><i className="fas fa-arrow-up" onClick={toTheTop}></i></div>
+            {isScrolling > 300 ? 
+            <div className="navbar-logo" ><span>Luis</span><a href="/" className="menu__link__home">G. Vicente</a><i className="fas fa-arrow-up" onClick={toTheTop}></i></div> :
+            <div className="navbar-logo" ><a href="/" className="menu__link__home">Porfolio</a><i className="fas fa-arrow-up" onClick={toTheTop}></i></div>}
             
             <div className="navbar__max-width">
             <Burguer/>

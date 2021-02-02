@@ -30,7 +30,7 @@ const Cover = ({isScrolling}) => {
                             'Desarrollador Web.',
                             1000
                         ]}
-                    /></p> : <p className="text-secondary text-job">Desarrollador web.</p>}
+                    /></p> : <p className="text-secondary text-job">Desarrollador web.|</p>}
             </div>
         </div>
     )

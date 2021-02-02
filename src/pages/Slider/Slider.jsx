@@ -3,9 +3,13 @@ import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import Slides from "./Slides";
 import "./Slider.scss";
+import { useHistory } from 'react-router-dom';
 
 
 const Slider = () => {
+
+    const history= useHistory();
+
     return (
         <div id="projects" className="carousel-container">
         <div className="carousel-title">
@@ -13,6 +17,7 @@ const Slider = () => {
         </div>
   
         <Carousel
+          onClickItem={()=> history.push('/templates')}
           arrows
           //debería tener tantos elem como proyectos tengamos
           slidesPerPage={3}

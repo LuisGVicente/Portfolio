@@ -24,12 +24,12 @@
     cursor: pointer;
   }
   
-  .slide-container > img {
+  .slide-container a img {
     object-fit: contain;
     transition: all 0.2s ease-in-out;
   }
   
-  .slide-container:hover > img {
+  .slide-container:hover a img {
     transform: scale(1.2);
     opacity: 0.7;
   }

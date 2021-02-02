@@ -7,7 +7,12 @@ const RightNav = ({open}) => {
     const location = useLocation();
     const history = useHistory();
 
-    const scrolling = () => {location.pathname !== "/timeline" ?  window.scrollTo(0,4000) : history.push('/#contact')}
+    const combo = () => {
+        history.push('/#contact');
+        window.scrollTo(0,4500)
+    }
+
+    const scrolling = () => {location.pathname !== "/timeline" ?  window.scrollTo(0,4000) : combo()}
 
     const Ul = styled.ul`
         list-styled: none;
