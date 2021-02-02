@@ -3,7 +3,7 @@ import "./Cover.scss";
 import coverVideo from  "../../assets/media/pexels-pcdesk.mp4";
 import Typical from 'react-typical';
 
-const Cover = () => {
+const Cover = ({isScrolling}) => {
 
 
     return (
@@ -12,6 +12,7 @@ const Cover = () => {
             <div className="cover-content">
                 <p className="text-welcome">¡Bienvenidos! Mi nombre es</p>
                 <h1 className="text-main">Luis <span className="text-main__border">García Vicente</span></h1>
+                {isScrolling < 10 ? 
                 <p className="text-secondary">
                 <Typical
                         className="text-job"
@@ -29,7 +30,7 @@ const Cover = () => {
                             'Desarrollador Web.',
                             1000
                         ]}
-                    /></p>
+                    /></p> : <p className="text-secondary text-job">Desarrollador web.</p>}
             </div>
         </div>
     )

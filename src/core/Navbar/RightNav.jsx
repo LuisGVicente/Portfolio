@@ -1,7 +1,13 @@
 import React from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 const RightNav = ({open}) => {
+
+    const location = useLocation();
+    const history = useHistory();
+
+    const scrolling = () => {location.pathname !== "/timeline" ?  window.scrollTo(0,4000) : history.push('/#contact')}
 
     const Ul = styled.ul`
         list-styled: none;
@@ -14,7 +20,7 @@ const RightNav = ({open}) => {
             padding: 30px 0;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 630px) {
             flex-flow: column nowrap;
             background: linear-gradient(to bottom, black 20%, rgb(38, 38, 38) 30%, transparent 50%);;
             position: fixed;
@@ -30,9 +36,10 @@ const RightNav = ({open}) => {
 
     return (
     <Ul open={open}>
-        <li><a href="About" className="menu__link">Sobre mí</a></li>
-        <li><a href="Timeline" className="menu__link">Experiencia</a></li>
-        <li><a href="Contact" className="menu__link" >Contacto</a></li>
+        <li><a href="/#about" className="menu__link">Sobre mí</a></li>
+        <li><a href="/#projects" className="menu__link">Proyectos</a></li>
+        <li><a href="/timeline" className="menu__link">Experiencia</a></li>
+        <li><a href="/#contact" className="menu__link" onClick={() => scrolling()}>Contacto</a></li>
     </Ul>
     )
 }

@@ -33,7 +33,7 @@ const Routes = () => {
 
             <Route path="/">
                 <Navbar isScrolling={scrollHeight}/>
-                <Cover/>
+                <Cover isScrolling={scrollHeight}/>
                 <About/>
                 <Slider/>
                 <Info/>

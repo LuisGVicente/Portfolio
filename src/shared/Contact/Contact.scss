@@ -1,0 +1,99 @@
+@import '../../index.scss';
+
+.container{
+    max-width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+
+  }
+  
+  .footer-info {
+    font-size: 35px;
+    padding: 10px 0 10px 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .footer-info > h3 {
+    padding-bottom: 15px;
+  }
+  .wrapper{
+    box-shadow: 0 0 10px 0 $text-imp;
+  }
+  
+  .wrapper > *{
+    padding: 1em;
+  }
+  
+  .contact{
+    background: rgb(0, 0, 0);
+  }
+  
+  /* FORM STYLES */
+  .contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+  }
+  
+  .contact form p{
+    margin:0;
+    width: 100%;
+  }
+  
+  .contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contact form button, .contact form input, .contact form textarea{
+    width:100%;
+    padding:1em;
+    border:1px solid #c9e6ff;
+  }
+  
+  .contact form button{
+    background:rgb(88, 112, 82);
+    border:10;
+    text-transform: uppercase;
+    color: white;
+
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background: rgb(67, 109, 58);
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+  }
+  
+  /* LARGE SCREENS */
+  @media(min-width:700px){
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .wrapper > *{
+      padding:2em;
+    }
+  
+    .company-info h3, .company-info ul, .brand{
+      text-align: left;
+    }
+  }
+
+  
+
+  @media only screen and (max-width: 610px) {
+    .footer-info {
+      text-align: center;
+      padding: 0;
+      font-size: 20px;
+    }
+    .contact form{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:10px;
+      }
+}

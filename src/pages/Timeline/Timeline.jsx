@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { ReactComponent as WorkIcon }  from '../../assets/img/work.svg';
 import { ReactComponent as SchoolIcon } from '../../assets/img/school.svg';
-import { ReactComponent as StarIcon } from '../../assets/img/star.svg';
 import timelineElements from "./TimelineDB";
 import {
   VerticalTimeline,
@@ -23,7 +22,7 @@ const Timeline = () => {
 
     return (
         <>
-        <video className="video" src={coverVideo} autoPlay loop muted />
+        <video className="time-video" src={coverVideo} autoPlay loop muted />
         <div className="time-container">
             
             <h1 className="endpoint">^</h1>
@@ -44,7 +43,7 @@ const Timeline = () => {
                     visible={false}
                 >
                     <h3 className="vertical-timeline-element-title">
-                    <img className="flag" src={element.src}/>&nbsp;{element.title}
+                    <img className="flag" src={element.src} alt={element.src}/>&nbsp;{element.title}
                     </h3>
                     <h5 className="vertical-timeline-element-subtitle">
                     {element.institution}

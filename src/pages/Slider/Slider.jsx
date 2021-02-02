@@ -7,9 +7,9 @@ import "./Slider.scss";
 
 const Slider = () => {
     return (
-        <div className="carousel-container">
+        <div id="projects" className="carousel-container">
         <div className="carousel-title">
-          <h2>My Projects</h2>
+          <h2>Mis proyectos</h2>
         </div>
   
         <Carousel

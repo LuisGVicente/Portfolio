@@ -45,9 +45,19 @@
 .menu__link {
     color: $text-normal;
     margin-left: 25px;
+    &__home{
+        color: $text-normal;
+        margin-left: 8px;
+        margin-right: 10px;
+    }
 }
 .menu__link:hover {
     color: $text-imp;
     transition: all 0.3s ease-out;
+}
+
+.arrow {
+    color: white;
+
 }
 

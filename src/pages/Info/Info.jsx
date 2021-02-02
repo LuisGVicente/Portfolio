@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Info.scss";
 
-const Contact = () => {
+const Info = () => {
     return (
         <div className="info-container">
         <div className="info">
@@ -11,4 +11,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Info
