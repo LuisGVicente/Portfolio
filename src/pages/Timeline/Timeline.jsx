@@ -12,24 +12,18 @@ import './Timeline.scss';
 const Timeline = () => {
 
 
-    //  fetch("https://api.pexels.com/videos/search?query=ink black and white",{
-    //    headers: {
-    //      Authorization: "563492ad6f91700001000001d20ca99003274a02bf19e94857197fc8"
-    //    }
-    //  })
-    //     .then(resp => {
-    //       return resp.json()
-    //     })
-    //     .then(data => {
-    //         console.log(data);
-    //       getVideo(data.videos);
-    //     })
+     fetch("https://api.pexels.com/videos/search?query=desert road",{
+       headers: {
+         Authorization: "563492ad6f91700001000001d20ca99003274a02bf19e94857197fc8"
+       }
+     })
+        .then(resp => {
+          return resp.json()
+        })
+        .then(data => {
+          console.log(data);
+        })
 
-    //     function getVideo(videos) {
-    //         videos && videos.map(video => {
-    //           console.log(videos)
-    //         })
-    //      }
 
     let workIconStyles = { background: "#277c6e" };
     let schoolIconStyles = { background: "#c59119" };
@@ -55,7 +49,7 @@ const Timeline = () => {
 
     return (
         <>
-        <video className="time-video" src="https://vod-progressive.akamaized.net/exp=1617029719~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3094%2F14%2F365471710%2F1506921253.mp4~hmac=518bcc40078d443c34738a2c50d5f40d275fbf6397f81444b6852691b516f667/vimeo-prod-skyfire-std-us/01/3094/14/365471710/1506921253.mp4?filename=video.mp4" autoPlay loop muted />
+        <video className="time-video" src="https://player.vimeo.com/external/365471710.hd.mp4?s=d991fb487e8e3b3cc26d8d065300f83454215757&profile_id=175&oauth2_token_id=57447761" autoPlay loop muted />
         <div className="time-container">
             
             <h1 className="endpoint">^</h1>

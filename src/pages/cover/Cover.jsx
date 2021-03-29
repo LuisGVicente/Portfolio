@@ -8,7 +8,7 @@ const Cover = ({isScrolling}) => {
     let ink = "https://player.vimeo.com/external/365128226.hd.mp4?s=cc1d27493cb4e8c4b5b12ba1aed7b59a838099f5&profile_id=175&oauth2_token_id=57447761";
     return (
         <div className="cover-container" id="cover">
-            <video className="video" src={ink} autoPlay loop muted/>
+            <video className="video" src={cassette} autoPlay loop muted/>
             <div className="cover-content">
                 <p className="text-welcome">¡Bienvenidos! Mi nombre es</p>
                 <h1 className="text-main">Luis <span className="text-main__border">García Vicente</span></h1>
