@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     width: 55%;
-    padding: 0 100px 0 100px;
+    padding: 0 10vmin 0 40vmin;
   }
   
   .about-desc > h3 {
@@ -26,12 +26,14 @@
   }
   
   .about-img {
-    height: 100%;
-    width: 45%;
+    height: 70vh;
+    width: 51vmin;
     display: flex;
     align-self: center;
     overflow: hidden;
     object-fit: contain;
+    border-left: 5.6vmin solid black;
+    border-right: 5.6vmin solid black;
   }
   
   @media only screen and (max-width: 960px) {
@@ -42,9 +44,9 @@
     }
   
     .about-desc {
-      width: 90%;
+      width: 50vh;
       margin: 0 auto;
-      padding: 40px 20px 50px 20px;
+      padding: 5vmin;
     }
   
     .about-desc > h3 {
@@ -53,8 +55,8 @@
     }
   
     .about-img {
-      width: 100%;
-      margin-bottom: 50px;
+      width: 50vh;
+      border-top: 5.6vmin solid black;
     }
   
     .about-img > img {

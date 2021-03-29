@@ -1,10 +1,10 @@
-@import '../../index.scss';
+@import '../../../index.scss';
 
 .container{
     max-width:80%;
     margin-left:auto;
     margin-right:auto;
-    padding:1em;
+    padding: 18vmin 0;
 
   }
   
@@ -20,10 +20,13 @@
   }
   .wrapper{
     box-shadow: 0 0 10px 0 $text-imp;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
   }
   
   .wrapper > *{
-    padding: 1em;
+    padding: 2em;
   }
   
   .contact{
@@ -53,42 +56,42 @@
   }
   
   .contact form button{
-    background:rgb(88, 112, 82);
-    border:10;
+    background:black;
+    //border-color: $text-imp;
+    border: 1px outset $text-imp;
     text-transform: uppercase;
     color: white;
 
   }
   
   .contact form button:hover,.contact form button:focus{
-    background: rgb(67, 109, 58);
+    background: $text-imp;
     color:#fff;
     outline:0;
-    transition: background-color 2s ease-out;
+    font-weight: 600;
+    transition: background-color 3s ease-out;
   }
   
   /* LARGE SCREENS */
-  @media(min-width:700px){
+  @media only screen and (max-width:1024px){
     .wrapper{
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr;
+      padding: 2em;
+    }
+    .container{
+      padding: 20vmin 15vmin;
     }
   
     .wrapper > *{
-      padding:2em;
+      padding: 3em 2em 2em;
     }
   
     .company-info h3, .company-info ul, .brand{
       text-align: left;
     }
-  }
-
-  
-
-  @media only screen and (max-width: 610px) {
     .footer-info {
       text-align: center;
-      padding: 0;
       font-size: 20px;
     }
     .contact form{
@@ -96,4 +99,24 @@
         grid-template-columns: 1fr 1fr;
         grid-gap:1px;
       }
+  }
+
+  @media only screen and (max-width: 780px) {
+    .container {
+      padding: 10vmin 10vmin;
+    }
+  }
+
+
+
+@media only screen and (max-width: 660px) {
+  .container {
+    padding: 0;
+  }
+  .wrapper {
+    padding: 0;
+  }
+  .wrapper > *{
+    padding: 4vmin 5vmin;
+  }
 }

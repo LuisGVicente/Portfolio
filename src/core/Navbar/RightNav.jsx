@@ -9,7 +9,7 @@ const RightNav = ({open}) => {
 
     const combo = () => {
         history.push('/#contact');
-        window.scrollTo(0,4500)
+        window.scrollTo(0,5500)
     }
 
     const scrolling = () => {location.pathname !== "/timeline" ?  window.scrollTo(0,4000) : combo()}

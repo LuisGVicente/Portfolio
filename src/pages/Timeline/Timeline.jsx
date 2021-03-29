@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ReactComponent as WorkIcon }  from '../../assets/img/work.svg';
 import { ReactComponent as SchoolIcon } from '../../assets/img/school.svg';
 import timelineElements from "./TimelineDB";
@@ -14,10 +14,24 @@ const Timeline = () => {
 
     let workIconStyles = { background: "#277c6e" };
     let schoolIconStyles = { background: "#c59119" };
+    const [element, setElement] = useState(timelineElements);
+
+    const showSchool = async () => {
+        await setElement(timelineElements.filter(elem => elem.icon === 'school'));
+        window.scrollTo(0,6000);
+    }
+    const showWork = async () => {
+        await setElement(timelineElements.filter(elem => elem.icon === 'work'));
+        window.scrollTo(0,6000);
+    }
+    const showAll = async () => {
+        await setElement(timelineElements.filter(elem => elem.icon));
+        window.scrollTo(0,6000);
+    }
     
 
     useEffect(() => {
-        window.scrollTo(0,4000);
+        window.scrollTo(0,7000);
     }, [])
 
     return (
@@ -26,8 +40,13 @@ const Timeline = () => {
         <div className="time-container">
             
             <h1 className="endpoint">^</h1>
+            <div className="btnfiltro">
+                <button className="btnfiltro btnfiltro__todo btnfiltro--black" onClick={()=> showAll()}>Ver Todo</button>
+                <button className="btnfiltro btnfiltro__laboral btnfiltro--black" onClick={()=> showWork()}>Laboral</button>
+                <button className="btnfiltro btnfiltro__academico btnfiltro--black" onClick={()=> showSchool()}>Académico</button>
+            </div>
             <VerticalTimeline>
-            {timelineElements.map((element) => {
+            {element.map((element) => {
                 let isWorkIcon = element.icon === "work";
                 let showButton =
                 element.buttonText !== undefined &&
@@ -74,6 +93,11 @@ const Timeline = () => {
                 );
             })}
             </VerticalTimeline>
+            <div className="btnfiltro">
+                <button className="btnfiltro btnfiltro__todo" onClick={()=> showAll()}>Ver Todo</button>
+                <button className="btnfiltro btnfiltro__laboral" onClick={()=> showWork()}>Laboral</button>
+                <button className="btnfiltro btnfiltro__academico" onClick={()=> showSchool()}>Académico</button>
+            </div>
             <h1 className="title">El camino</h1>
         </div>
         </>
