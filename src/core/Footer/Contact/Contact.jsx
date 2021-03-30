@@ -23,7 +23,9 @@ const Contact = () => {
             <div class="wrapper animated bounceInLeft">
                 <div className="footer-info">
                     <h3>¡Contacta!</h3>
-                    <p>Based in Your City</p>
+                    <p>luisgarciavicente@gmail.com</p>
+                    <p>+34 644 099 691</p>
+                    
                     
                 </div>
                 
