@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {Switch, Route} from "react-router-dom";
-import Cover from "../../pages/Cover_temp/Cover";
+import Cover from "../../pages/Cover/Cover";
 import Navbar from "../../core/Navbar/Navbar";
 import About from "../../pages/About/About";
 import Slider from "../../pages/Slider/Slider";
