@@ -1,16 +1,15 @@
 @import '../../../index.scss';
 
 .container{
-    max-width:80%;
+    max-width:70%;
     margin-left:auto;
     margin-right:auto;
-    padding: 18vmin 0;
+    padding: 6vw 0;
 
   }
   
   .footer-info {
-    font-size: 35px;
-    padding: 10px 0 10px 50px;
+    font-size: 1.7vw;
     width: 90%;
     margin: 0 auto;
   }
@@ -18,8 +17,11 @@
   .footer-info > h3 {
     padding-bottom: 15px;
   }
+  .footer-info > p {
+    padding-bottom: 15px;
+  }
   .wrapper{
-    box-shadow: 0 0 10px 0 $text-imp;
+    border: 2px solid $text-imp;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
@@ -30,7 +32,7 @@
   }
   
   .contact{
-    background: rgb(0, 0, 0);
+    background: $text-normal;
   }
   
   /* FORM STYLES */
@@ -52,12 +54,11 @@
   .contact form button, .contact form input, .contact form textarea{
     width:100%;
     padding:1em;
-    border:1px solid #000000;
+    border:1px solid $text-secondary;
   }
   
   .contact form button{
     background:black;
-    //border-color: $text-imp;
     border: 1px outset $text-imp;
     text-transform: uppercase;
     color: white;
@@ -69,22 +70,22 @@
     color:#fff;
     outline:0;
     font-weight: 600;
-    transition: background-color 3s ease-out;
+    transition: background-color 2s ease-out;
   }
   
-  /* LARGE SCREENS */
-  @media only screen and (max-width:1024px){
+  @media only screen and (max-width:765px){
     .wrapper{
       display: grid;
       grid-template-columns: 1fr;
-      padding: 2em;
+      padding: 0;
     }
     .container{
       padding: 20vmin 15vmin;
+      padding: 0;
     }
-  
+
     .wrapper > *{
-      padding: 3em 2em 2em;
+      padding: 0;
     }
   
     .company-info h3, .company-info ul, .brand{
@@ -92,31 +93,11 @@
     }
     .footer-info {
       text-align: center;
-      font-size: 20px;
+      font-size: .8em;
     }
     .contact form{
-        display: block;
         grid-template-columns: 1fr 1fr;
         grid-gap:1px;
       }
   }
 
-  @media only screen and (max-width: 780px) {
-    .container {
-      padding: 10vmin 10vmin;
-    }
-  }
-
-
-
-@media only screen and (max-width: 660px) {
-  .container {
-    padding: 0;
-  }
-  .wrapper {
-    padding: 0;
-  }
-  .wrapper > *{
-    padding: 4vmin 5vmin;
-  }
-}

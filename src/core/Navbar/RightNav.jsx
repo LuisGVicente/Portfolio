@@ -27,7 +27,7 @@ const RightNav = ({open}) => {
 
         @media (max-width: 630px) {
             flex-flow: column nowrap;
-            background: linear-gradient(to bottom, black 20%, rgb(38, 38, 38) 30%, transparent 50%);;
+            background: linear-gradient(to bottom, black 40%, rgb(38, 38, 38) 70%, transparent 100%);;
             position: fixed;
             transform: ${({ open }) => open ? 'translateY(0)' : 'translateY(100%)'};
             top: 0;
