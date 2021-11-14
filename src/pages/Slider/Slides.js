@@ -3,6 +3,8 @@ import "./Slider.scss";
 import notapps from '../../assets/img/notapps.PNG';
 import portfolio from '../../assets/img/portfolio.png';
 import pd from '../../assets/img/pd.png';
+import visteme from '../../assets/img/vistemeyveras.jpg';
+import iker from '../../assets/img/ikerlopez.jpg';
 
 const slidesInfo = [
   {
@@ -24,6 +26,20 @@ const slidesInfo = [
     alt: "Proyecto 3: PresenteDigital",
     desc: "Proyecto 3: PresenteDigital",
     href: "https://presentedigital.es",
+  },
+  {
+    src:
+    visteme,
+    alt: "Proyecto 4: Vísteme y verás",
+    desc: "Proyecto 4: Vísteme y verás",
+    href: "https://vistemeyveras.es/",
+  },
+  {
+    src:
+    iker,
+    alt: "Proyecto 5: Iker López Arquitecto",
+    desc: "Proyecto 5: Iker López Arquitecto",
+    href: "https://ikerlopez.com/",
   },
 ];
 

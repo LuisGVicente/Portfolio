@@ -86,10 +86,15 @@ const Timeline = () => {
                     <p id="description">{element.description}</p>
                     <ol className="rolelist">
                         {element.role && element.role.map((rol) => {
-                            return <li className="roles">{rol}</li>
+                            return <li className="roles">
+                                        <a 
+                                        className={`${rol.href ? "button" : "" }`} 
+                                        href={rol.href} 
+                                        target="_blank">{rol.tech}
+                                        </a>
+                                    </li>
                         })}
-                    </ol>
-                    
+                    </ol>              
                     {showButton && (
                     <a
                         className={`button ${
