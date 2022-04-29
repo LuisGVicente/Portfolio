@@ -12,17 +12,17 @@ import './Timeline.scss';
 const Timeline = () => {
 
 
-     fetch("https://api.pexels.com/videos/search?query=desert road",{
-       headers: {
-         Authorization: "563492ad6f91700001000001d20ca99003274a02bf19e94857197fc8"
-       }
-     })
-        .then(resp => {
-          return resp.json()
-        })
-        .then(data => {
-          console.log(data);
-        })
+    //  fetch("https://api.pexels.com/videos/search?query=desert road",{
+    //    headers: {
+    //      Authorization: "563492ad6f91700001000001d20ca99003274a02bf19e94857197fc8"
+    //    }
+    //  })
+    //     .then(resp => {
+    //       return resp.json()
+    //     })
+    //     .then(data => {
+    //       console.log(data);
+    //     })
 
 
     let workIconStyles = { background: "#277c6e" };
@@ -86,11 +86,13 @@ const Timeline = () => {
                     <p id="description">{element.description}</p>
                     <ol className="rolelist">
                         {element.role && element.role.map((rol) => {
-                            return <li className="roles">
+                            return <li className="roles" key={rol.tech}>
                                         <a 
                                         className={`${rol.href ? "button" : "" }`} 
                                         href={rol.href} 
-                                        target="_blank">{rol.tech}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >{rol.tech}
                                         </a>
                                     </li>
                         })}

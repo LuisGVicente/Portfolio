@@ -19,8 +19,8 @@ const Contact = () => {
 
     return(
         <>
-        <div class="container">
-            <div class="wrapper animated bounceInLeft">
+        <div className="container">
+            <div className="wrapper animated bounceInLeft">
                 <div className="footer-info">
                     <h3>¡Contacta!</h3>
                     <p>luisgarciavicente@gmail.com</p>
