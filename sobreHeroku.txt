@@ -2,3 +2,8 @@ git add .
 git comment -m ""
 git push origin master
 git push heroku master
+
+Si me desaconectara, poner en el cmd:
+heroku login
+luisgarciavicente@gmail.com
+Heroku47081359!
